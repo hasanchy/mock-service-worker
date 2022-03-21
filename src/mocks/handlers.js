@@ -29,4 +29,12 @@ export const handlers = [
 			}),
 		)
 	}),
+	rest.get('https://ergast.com/api/f1/driverStandings/1.json', (req, res, ctx) => {
+		return res(
+			ctx.status(200),
+			ctx.json({
+				username: 'admin',
+			}),
+		)
+	}),
 ]
